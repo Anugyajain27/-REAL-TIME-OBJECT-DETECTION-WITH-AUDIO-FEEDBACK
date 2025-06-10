@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Ally - Object Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>👁️‍🗨️ Object Detection Assistant</h1>
+
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="Video Feed" id="video">
+        </div>
+
+        <div class="objects-box">
+            <h2>🔍 Detected Objects</h2>
+            <ul id="object-list"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
